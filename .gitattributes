@@ -1,0 +1,5 @@
+# Override language detection to treat .js files as Python
+*.js linguist-language=Python
+
+# Mark all .min.js files as generated code
+*.min.js linguist-generated=true
