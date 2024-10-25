@@ -19,15 +19,13 @@
                         </div>
 
                         <div class="text-holder">
-                            {% if vendor %}
-                                <span class="restaurant-title">{{ vendor.vendor_name }}</span>
-                                <div class="text">
-                                    <i class="icon-location"></i>
-                                    <p>{{ vendor.user_profile.address }}</p>
-                                </div>
-                            {% else %}
-                                <p>Vendor data not available</p>
-                            {% endif %}
+                            <span class="restaurant-title">{{vendor.vendor_name}}</span>
+                            <div class="text">
+                                {% if vendor.user_profile.address %}
+                                <i class="icon-location"></i>
+                                <p>{{vendor.user_profile.address}}</p>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
                 </div>
