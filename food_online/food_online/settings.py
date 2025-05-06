@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'accounts',
     'vendor',
     'menu',
+    'marketplace',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +66,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'accounts.context_processors.get_vendor',
+                'marketplace.context_processors.get_cart_counter',
+                'accounts.context_processors.get_google_api',
+                'accounts.context_processors.get_user_profile',
             ],
         },
     },
@@ -155,4 +160,4 @@ EMAIL_HOST_PASSWORD=config('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS=True
 DEFAULT_FROM_MAIL='Food_Online MarketPlace <ashmitpandey04@gmail.com>'
 
-
+GOOGLE_API_KEY="AIzaSyBoFa9bnTHwEbMtmxZuRXWev4F6uwx4P-4"
