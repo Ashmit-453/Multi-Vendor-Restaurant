@@ -70,6 +70,7 @@ TEMPLATES = [
                 'marketplace.context_processors.get_cart_counter',
                 'accounts.context_processors.get_google_api',
                 'accounts.context_processors.get_user_profile',
+                'marketplace.context_processors.get_cart_amounts',
             ],
         },
     },
