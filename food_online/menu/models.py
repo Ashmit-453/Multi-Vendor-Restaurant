@@ -3,7 +3,7 @@ from django.db import models
 from vendor.models import Vendor
 class Category(models.Model):
     vendor=models.ForeignKey(Vendor,on_delete=models.CASCADE)
-    category_name=models.CharField(max_length=50,unique=True)
+    category_name=models.CharField(max_length=50)
     slug=models.SlugField(max_length=100,unique=True)
     description=models.TextField(max_length=100,blank=True)
     is_created=models.DateTimeField(auto_now_add=True)
