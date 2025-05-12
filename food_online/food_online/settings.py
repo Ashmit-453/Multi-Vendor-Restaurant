@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'menu',
     'marketplace',
     'customers',
+    'orders'
 ]
 
 MIDDLEWARE = [
@@ -164,4 +165,5 @@ DEFAULT_FROM_MAIL='Food_Online MarketPlace <ashmitpandey04@gmail.com>'
 
 GOOGLE_API_KEY=config('GOOGLE_API_KEY')
 # Base directory of your project
- 
+RZP_KEY_ID=config('RZP_KEY_ID')
+RZP_KEY_SECRET=config('RZP_KEY_SECRET')
